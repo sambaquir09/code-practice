@@ -29,6 +29,4 @@ end
 --##EVENTS
 --##OTHERS
 
---runTestEZ()
-
 return ModuleScript
