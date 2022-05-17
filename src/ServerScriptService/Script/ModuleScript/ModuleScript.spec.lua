@@ -11,20 +11,22 @@ return function()
 
     describe("Unit Testing: Subraction",function()
 
-        local givenOne = 2
-        local givenTwo = 3
         local range = 0
-
+        
         it("if a - b less than 0, return 0",function()
+            local givenOne = 3
+            local givenTwo = 2
             local calculated = ModuleScript.Subraction(givenOne,givenTwo)
             local answer = calculated < range
-            expect(answer).to.equal(true)
+            expect(answer).to.be.ok()
         end)    
 
         it("if a - b ,more than 0,return a - b",function()
+            local givenOne = 2
+            local givenTwo = 3
             local calculated = ModuleScript.Subraction(givenOne,givenTwo)
             local answer = calculated > range
-            expect(answer).to.equal(true)
+            expect(answer).to.be.ok()
         end)
 
     end)

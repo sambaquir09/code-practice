@@ -21,12 +21,14 @@ function ModuleScript.Addition(a: IntValue,b: IntValue)
     return a + b
 end
 
-function ModuleScript:Subraction(a: IntValue, b:IntValue)
+function ModuleScript.Subraction(a: IntValue, b:IntValue)
     return a - b
 end
 
 --##PUBLIC FUNCTIONS FOR UNIT TESTS
 --##EVENTS
 --##OTHERS
+
+--runTestEZ()
 
 return ModuleScript
